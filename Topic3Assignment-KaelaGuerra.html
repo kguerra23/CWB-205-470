@@ -1,0 +1,76 @@
+<!--
+    Name: Kaela Guerra
+    Assignment: Topic 3 Assignment
+    Date: 03/01/2021
+    Class: CWB 205 470
+    Description: Topic 3 content is added to my on-going website. First, create a form. Call displayMessage() with onclick. For the if statement, 
+        create a label and a radio button. With onclick call fruit1(), fruit2(), and fruit3() function. New label for user favorite season. onclick
+        will call season() and find the user's favorite season with an if/else statement. New label for favorite soda. onclick will call soda() and find the user's favorite season with switch statement. 
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Topic 3 Assignment - Kaela Guerra</title>
+        <script src="Topic3Assignment-KaelaGuerra.js"></script>
+    </head>
+    <body>
+        <!--Creates a form for the user-->
+        <form>
+            First name:
+            <!--User input-->
+            <input type = "input" name="yourName">
+            <!--Call JavaScript function with form.yourName.value-->
+            <input type="button" onclick="displayMessage(form.yourName.value);"
+            value="Display Message">
+        </form>
+
+
+        <!--If Statement-->
+            <h3>Favorite Fruit</h3>
+            <label>
+                <!--Create radio button with input | onclick calls function fruit1() | pass value of radio button with this.value | == condition-->
+                <input type="radio" name="fav_fruit1" value="Watermelon" onclick="fruit1(this.value);"> Watermelon
+            </label>
+            <label>
+                <input type="radio" name="fav_fruit2" value="Apple" onclick="fruit2(this.value);"> Apple
+            </label>
+            <label>
+                <input type="radio" name="fav_fruit3" value="Orange" onclick="fruit3(this.value);"> Orange
+            </label>
+
+
+        <!--If/Else & Else/If Statement with == condition-->
+            <h3>Favorite Season</h3>
+            <label>
+                <input type="radio" name="fav_season" value="Spring" onclick="season(this.value);"> Spring
+            </label>
+            <label>
+                <input type="radio" name="fav_season" value="Summer" onclick="season(this.value);"> Summer 
+            </label>
+            <label>
+                <input type="radio" name="fav_season" value="Autumn/Fall" onclick="season(this.value);"> Autumn/Fall 
+            </label>
+            <label>
+                <input type="radio" name="fav_season" value="Winter" onclick="season(this.value);"> Winter
+            </label>
+
+
+        <!--Switch-->
+            <h3>Favorite Soda</h3>
+            <label>
+                <input type="radio" name="fav_soda" value="Root Beer" onclick="soda(this.value);"> Root Beer
+            </label>
+            <label>
+                <input type="radio" name="fav_soda" value="Sprite" onclick="soda(this.value);"> Sprite
+            </label>
+            <label>
+                <input type="radio" name="fav_soda" value="Coca Cola" onclick="soda(this.value);"> Coca Cola
+            </label>
+            <label>
+                <input type="radio" name="fav_soda" value="Pepsi" onclick="soda(this.value);"> Pepsi
+            </label>
+
+    </body>
+
+</html>
