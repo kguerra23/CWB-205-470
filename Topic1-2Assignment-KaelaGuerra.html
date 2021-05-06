@@ -1,0 +1,164 @@
+<!--
+    Name: Kaela Guerra
+    Assignment: Topic 1-2 Assignment
+    Date: 02/22/2021
+    Class: CWB 205 470
+    Description: Make a table that displays all types of the result of the snippets in the instructions. The table has the snippet number, then the
+        question in the second column, and my answer or evaluation in the third column. No external javascript included since it's just a table with answers.
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Styling the table to be more pleasing to view-->
+        <style>
+            table {
+                font-family:arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%
+            }
+
+            td, th {
+                border: 1px solid #dddddd
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Evaluations</h1>
+        <table>
+            <!--First row that displays the table colum titles-->
+            <tr>
+                <th>Snippets</th>
+                <th>Expression</th>
+                <th>Evaluation/Answer</th>
+            </tr>
+            <!--24 rows with row number, question, and answer-->
+            <tr>
+                <td>Snippet 1</td>
+                <td>100+4</td>
+                <td>104</td>
+            </tr>
+            <tr>
+                <td>Snippet 2</td>
+                <td>'a'+'b'</td>
+                <td>"ab"</td>
+            </tr>
+            <tr>
+                <td>Snippet 3</td>
+                <td>'Bob'+'Smith'</td>
+                <td>"BobSmith"</td>
+              </tr>
+              <tr>
+                <td>Snippet 4</td>
+                <td>'7'+'9'</td>
+                <td>"79"</td>
+              </tr>
+              <tr>
+                <td>Snippet 5</td>
+                <td>'7' + 9</td>
+                <td>"79"</td>
+              </tr>
+              <tr>
+                <td>Snippet 6</td>
+                <td>'7'-9</td>
+                <td>-2</td>
+              </tr>
+              <tr>
+                <td>Snippet 7</td>
+                <td>'abc'*3</td>
+                <td>NaN</td>
+              </tr>
+              <tr>
+                <td>Snippet 8</td>
+                <td>7+2*3</td>
+                <td>13</td>
+              </tr>
+              <tr>
+                <td>Snippet 9</td>
+                <td>(7+2)*3</td>
+                <td>27</td>
+              </tr>
+              <tr>
+                <td>Snippet 10</td>
+                <td>(null+2)/3</td>
+                <td>0.666</td>
+              </tr>
+              <tr>
+                <td>Snippet 11</td>
+                <td>var name; | Evaluate: name</td>
+                <td>variable</td>
+              </tr>
+              <tr>
+                <td>Snippet 12</td>
+                <td>var x = 7; var y = 4; var z = x * y; | Evaluate: z - 3</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>Snippet 13</td>
+                <td>var a = true; var b = false; | Evaluate: a && b</td>
+                <td>false</td>
+              </tr>
+              <tr>
+                <td>Snippet 14</td>
+                <td>var a = true; var b = false; | Evaluate: a || b</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Snippet 15</td>
+                <td>var foo = 3; foo++; foo++; | Evaluate: foo/2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>Snippet 16</td>
+                <td>var age = 29.8; var wholeAge = Math.floor(age); var nextAge = Math.ceil(age) | Evaluate: nextAge - wholeAge</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>Snippet 17</td>
+                <td>'5' + 3 - 3</td>
+                <td>50</td>
+              </tr>
+              <tr>
+                <td>Snippet 18</td>
+                <td>var isRed = false; isRed = !isRed; | Evaluate: isRed</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Snippet 19</td>
+                <td>var isBlue = true; var isBlue = !!isBlue; | Evaluate: isBlue</td>
+                <td>true</td>
+              </tr>
+              <tr>
+                <td>Snippet 20</td>
+                <td>var name = 'Sally'; var age = 25; | name.length + age</td>
+                <td>30</td>
+              </tr>
+              <tr>
+                <td>Snippet 21</td>
+                <td>var x = 10; var y = 73.3; var point = '[' + x + ', ' + y + ']'; | Evaluate: 'point: '+point</td>
+                <td>"point: [10, 73.3]"</td>
+              </tr>
+              <tr>
+                <td>Snippet 22</td>
+                <td>var numberOfSheep = 16; var numberOfGoats = 3; | Evaluate: numberOfGoats + numberOfSheep++</td>
+                <td>19</td>
+              </tr>
+              <tr>
+                <td>Snippet 23</td>
+                <td>var numberOfSheep = 16; var numberOfGoats = 3; | numberOfGoats - ++numberOfSheep</td>
+                <td>-14</td>
+              </tr>
+              <tr>
+                <td>Snippet 24</td>
+                <td>var x; var y = (x=7); | Evaluate: y</td>
+                <td>7</td>
+              </tr>
+        </table>
+    </body>
+</html>
